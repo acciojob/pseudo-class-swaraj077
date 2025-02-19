@@ -1,17 +1,20 @@
 /*  your css code here. If applicable */
-#container{
-	margin: 20px;
+#container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;  
 }
 
-#container::before{
-	content: "Before Element"
+#container::before {
+    content: "Before Element";
+    color: #f00;          
+    font-size: 20px;      
+    margin-right: 10px;   
 }
 
-#container::after{
-	content: "After Element"
-}
-
-#container::before, ::after{
-	color: red;
-	font-size: 20px;
+#container::after  {
+    content: "After Element";
+    color: #f00;          
+    font-size: 20px;      
+    margin-left: 10px;    
 }
